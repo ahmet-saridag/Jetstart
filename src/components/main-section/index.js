@@ -1,8 +1,9 @@
 import React from "react";
-import { LuRocket } from "react-icons/lu";
 import { IoGiftOutline } from "react-icons/io5";
 import Image from "next/image";
 import RightImg from "@/public/right-image.webp";
+import { BsFillRocketFill } from "react-icons/bs";
+
 
 export default function MainSection() {
   return (
@@ -32,7 +33,7 @@ export default function MainSection() {
         <div>
           <button className="btn btn-primary group btn-wide text-md">
             <span>
-              <LuRocket className="text-2xl" />
+              <BsFillRocketFill className="text-2xl" />
             </span>
             <span className="tracking-tighter">Get Started</span>
           </button>
@@ -93,7 +94,7 @@ export default function MainSection() {
                 type="radio"
                 name="rating-2"
                 className="mask mask-star-2 bg-primary"
-                checked
+                checked={true}
               />
             </div>
             <div className="text-base text-base-content/80">

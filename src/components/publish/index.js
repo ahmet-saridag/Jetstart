@@ -3,9 +3,9 @@ import { FaHackerNews, FaProductHunt } from "react-icons/fa";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaReddit } from "react-icons/fa";
 
-export default function Featured() {
+export default function Publish() {
   // create links array contains featured icons
-  const featuredList = [
+  const publishList = [
     {
       path: "https://news.ycombinator.com/item?id=37333976",
       className:
@@ -42,7 +42,7 @@ export default function Featured() {
   return (
     <section className="p-8 md:p-12 flex flex-wrap items-center justify-center gap-4 md:gap-8">
       <span className="text-xs text-[10px] opacity-50">Featured on</span>
-      {featuredList.map((item, idx) => (
+      {publishList.map((item, idx) => (
         <a
           key={idx}
           href={item.path}

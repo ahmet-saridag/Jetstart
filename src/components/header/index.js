@@ -1,5 +1,5 @@
 import React from "react";
-import { LuRocket } from "react-icons/lu";
+import { BsFillRocketTakeoffFill } from "react-icons/bs";
 
 export default function Header() {
   // create a navbarlist
@@ -29,7 +29,7 @@ export default function Header() {
           href="/"
           className="w-28 md:w-32 flex gap-1 justify-center items-center cursor-pointer"
         >
-          <LuRocket className="text-3xl text-primary" />
+          <BsFillRocketTakeoffFill className="text-3xl text-primary" />
           <h2 className="text-2xl font-semibold">JetStart</h2>
         </a>
         <div>
