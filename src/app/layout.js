@@ -1,11 +1,6 @@
 import "./globals.css";
 import { Bricolage_Grotesque } from "@next/font/google";
-
-const bricolageGrotesque = Bricolage_Grotesque({
-  subsets: ["latin"],
-  variable: "--font-bricolage-grotesque",
-  display: "swap",
-});
+import CommonLayout from "@/layouts/CommonLayout";
 
 export const metadata = {
   title: "Create Next App",
@@ -15,7 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={bricolageGrotesque.variable}>{children}</body>
+      <body>
+        <CommonLayout>{children}</CommonLayout>
+      </body>
     </html>
   );
 }

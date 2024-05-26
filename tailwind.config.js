@@ -8,18 +8,28 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {},
+      container: {
+        center: true,
+      },
+      colors: {
+        "hacker-news": "#FF6600",
+        "product-hunt":"#ff6052",
+        "x-logo": "#0f1419",
+        "reddit-color":"#ff4500"
+      },
     },
   },
   daisyui: {
     themes: [
       {
         mytheme: {
-          primary: "#800020",
-          "primary-content": "#cfcfcf",
+          primary: "#FFD700",
+          "primary-content": "#131616",
           secondary: "#50C878",
           "secondary-content": "#FAFAFA",
           accent: "#FFD700",
           neutral: "#001015",
+          "base-content": "#cfcfcf",
           "base-100": "#25292e",
           info: "#0094ff",
           success: "#00bc59",
